@@ -1,4 +1,5 @@
 import { FaGoogle, FaYoutube, FaApple } from "react-icons/fa";
+import Container from "../ui/Container";
 
 const experiences = [
   {
@@ -24,10 +25,11 @@ const experiences = [
 export default function EducationExperience() {
   return (
     <section className="py-16 bg-black text-white">
-      <h2 className="text-3xl text-center mb-10">
-        My <span className="font-bold">Education and Experience</span>
+      <h2 className="text-[48px] text-center mb-16">
+        My <span className="font-black">Education and Experience</span>
       </h2>
-      <div className="flex flex-col gap-6 max-w-4xl mx-auto">
+      <Container>
+      <div className="flex flex-col gap-6">
         {experiences.map((exp, i) => (
           <div
             key={i}
@@ -42,6 +44,8 @@ export default function EducationExperience() {
           </div>
         ))}
       </div>
+
+      </Container>
     </section>
   );
 }

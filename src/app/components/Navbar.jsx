@@ -6,7 +6,7 @@ import Button from '../ui/Button'
 
 const Navbar = () => {
   return (
-    <div className='py-4 px-8 text-primary font-primary my-6'>
+    <div className='py-4 fixed top-0 z-[9999] w-full bg-white px-8 text-primary font-primary my-6'>
       <Container>
         <Flex>
           <Logo/>

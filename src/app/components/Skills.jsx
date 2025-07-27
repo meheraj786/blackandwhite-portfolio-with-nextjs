@@ -1,6 +1,7 @@
 import { FaNodeJs, FaReact, FaDatabase, FaGitAlt, FaFigma } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiJavascript, SiRedux, SiNextdotjs, SiTypescript, SiHtml5, SiCss3, SiTailwindcss, SiStorybook, SiSocketdotio } from "react-icons/si";
 import Button from "../ui/Button";
+import Container from "../ui/Container";
 
 const skills = [
   { icon: <SiJavascript size={40} />, label: "JavaScript" },
@@ -22,11 +23,12 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="py-16">
-      <h2 className="text-3xl text-center mb-10">
-        My <span className="font-bold">Skills</span>
+    <section className="py-16 text-center">
+      <h2 className="text-[48px] text-center mb-10">
+        My <span className="font-black">Skills</span>
       </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 max-w-5xl mx-auto mb-8">
+      <Container>
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mx-auto mb-8">
         {skills.map((skill, i) => (
           <div
             key={i}
@@ -40,11 +42,11 @@ export default function Skills() {
           </div>
         ))}
       </div>
-      <div className="flex justify-center">
         <Button>
           View More
         </Button>
-      </div>
+
+      </Container>
     </section>
   );
 }
