@@ -1,16 +1,18 @@
 import Flex from "../ui/Flex";
 import Container from "../ui/Container";
+import ParralaxEffect from "../ui/ParralaxEffect";
 
 
 export default function About() {
   return (
-    <section className="py-16">
+    <section className="py-16 relative">
+      <ParralaxEffect/>
       <Container>
         <Flex className="items-center gap-12">
           <div className="w-[400px] h-[400px] border-2 border-black rounded-xl flex items-center justify-center">
           </div>
           <div className="flex-1">
-            <h2 className="text-[48px] font-normal mb-6">
+            <h2 className="text-[38px] font-normal mb-6">
               About <span className="font-black">Me</span>
             </h2>
             <div className="text-[#71717A] text-[16px] leading-7 space-y-5">

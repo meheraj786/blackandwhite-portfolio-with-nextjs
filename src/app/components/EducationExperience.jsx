@@ -25,7 +25,7 @@ const experiences = [
 export default function EducationExperience() {
   return (
     <section className="py-16 bg-black text-white">
-      <h2 className="text-[48px] text-center mb-16">
+      <h2 className="text-[38px] text-center mb-16">
         My <span className="font-black">Education and Experience</span>
       </h2>
       <Container>

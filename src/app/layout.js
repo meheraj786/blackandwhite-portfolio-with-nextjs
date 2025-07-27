@@ -1,6 +1,7 @@
 import { Sora,  } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 const sora = Sora({
   subsets: ['latin'],
@@ -19,10 +20,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${sora.variable} antialiased`}
+        className={`${sora.variable} antialiased overflow-x-hidden`}
       >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );

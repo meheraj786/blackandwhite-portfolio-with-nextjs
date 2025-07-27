@@ -29,7 +29,7 @@ const projects = [
 export default function Projects() {
   return (
     <section className="py-16 bg-black text-white">
-      <h2 className="text-[40px] text-center mb-12">
+      <h2 className="text-[38px] text-center mb-12">
         My <span className="font-black">Projects</span>
       </h2>
       <Container>

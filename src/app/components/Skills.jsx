@@ -1,6 +1,5 @@
 import { FaNodeJs, FaReact, FaDatabase, FaGitAlt, FaFigma } from "react-icons/fa";
 import { SiMongodb, SiExpress, SiJavascript, SiRedux, SiNextdotjs, SiTypescript, SiHtml5, SiCss3, SiTailwindcss, SiStorybook, SiSocketdotio } from "react-icons/si";
-import Button from "../ui/Button";
 import Container from "../ui/Container";
 
 const skills = [
@@ -24,10 +23,11 @@ const skills = [
 export default function Skills() {
   return (
     <section className="py-16 text-center">
-      <h2 className="text-[48px] text-center mb-10">
+      <h2 className="text-[38px] text-center mb-10">
         My <span className="font-black">Skills</span>
       </h2>
       <Container>
+
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mx-auto mb-8">
         {skills.map((skill, i) => (
           <div
@@ -42,9 +42,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-        <Button>
-          View More
-        </Button>
 
       </Container>
     </section>
