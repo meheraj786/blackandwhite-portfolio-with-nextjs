@@ -3,6 +3,7 @@ import Container from '../ui/Container'
 import Flex from '../ui/Flex'
 import Logo from '../ui/Logo'
 import Button from '../ui/Button'
+import NavItems from '../ui/NavItems'
 
 const Navbar = () => {
   return (
@@ -11,10 +12,7 @@ const Navbar = () => {
         <Flex>
           <Logo/>
           <ul className='flex text-[20px] justify-center items-center gap-x-[32px] font-semibold'>
-            <li className='cursor-pointer hover:text-gray-400'>About Me</li>
-            <li className='cursor-pointer hover:text-gray-400'>Skills</li>
-            <li className='cursor-pointer hover:text-gray-400'>Project</li>
-            <li className='cursor-pointer hover:text-gray-400'>Contact Me</li>
+            <NavItems/>
           </ul>
           <Button>Resume</Button>
         </Flex>

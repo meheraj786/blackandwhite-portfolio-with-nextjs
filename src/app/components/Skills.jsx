@@ -22,7 +22,7 @@ const skills = [
 
 export default function Skills() {
   return (
-    <section className="py-16 text-center">
+    <section id="skill" className="py-16 text-center">
       <h2 className="text-[38px] text-center mb-10">
         My <span className="font-black">Skills</span>
       </h2>
@@ -42,7 +42,6 @@ export default function Skills() {
           </div>
         ))}
       </div>
-
       </Container>
     </section>
   );

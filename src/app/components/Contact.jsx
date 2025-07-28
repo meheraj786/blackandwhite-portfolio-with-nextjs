@@ -5,7 +5,7 @@ import { FaFacebookF, FaGithub, FaTwitter, FaDiscord } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section className="py-16 relative z-[999]">
+    <section id="contact" className="py-16 relative z-[999]">
       <Container>
         <Flex className="gap-x-12 flex-col md:flex-row justify-center items-start">
           {/* Left: Contact Form */}

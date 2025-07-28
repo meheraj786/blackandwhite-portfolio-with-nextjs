@@ -5,7 +5,7 @@ import ParralaxEffect from "../ui/ParralaxEffect";
 
 export default function About() {
   return (
-    <section className="py-16 relative">
+    <section id="about" className="py-16 relative">
       <ParralaxEffect/>
       <Container>
         <Flex className="items-center gap-12">
