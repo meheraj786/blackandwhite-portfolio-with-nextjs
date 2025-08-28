@@ -3,22 +3,10 @@ import Container from "../ui/Container";
 
 const experiences = [
   {
-    icon: <FaGoogle className="text-2xl text-[#4285F4]" />,
-    title: "Lead Software Engineer at Google",
-    date: "Nov 2019 – Present",
-    desc: `As a Senior Software Engineer at Google, I played a pivotal role in developing innovative solutions for Google's core search algorithms. Collaborating with a dynamic team of engineers, I contributed to the enhancement of search accuracy and efficiency, optimizing user experiences for millions of users worldwide.`,
-  },
-  {
-    icon: <FaYoutube className="text-2xl text-[#FF0000]" />,
-    title: "Software Engineer at Youtube",
-    date: "Jan 2017 – Oct 2019",
-    desc: `At Youtube, I served as a Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.`,
-  },
-  {
-    icon: <FaApple className="text-2xl text-white" />,
-    title: "Junior Software Engineer at Apple",
-    date: "Jan 2016 – Dec 2017",
-    desc: `During my tenure at Apple, I held the role of Software Architect, where I played a key role in shaping the architecture of mission-critical software projects. Responsible for designing scalable and efficient systems, I provided technical leadership to a cross-functional team.`,
+    icon: "",
+    title: "MERN Stack Development - Creative IT institute",
+    date: "Nov 2024 – Present",
+    desc: `I'm still studying MERN stack development in Creative IT institute.`,
   },
 ];
 

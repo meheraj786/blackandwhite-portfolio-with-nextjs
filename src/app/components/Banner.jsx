@@ -46,7 +46,7 @@ const Banner = () => {
        <ParralaxEffect/>
       <Container>
         <Flex>
-          <div className="left w-1/2">
+          <div className="left relative z-[10] w-1/2">
             <TypeWriterH1/>
             <p className='mt-[32px] text-[#71717A] mb-[80px]'>I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.</p>
             <SocialIcons/>
