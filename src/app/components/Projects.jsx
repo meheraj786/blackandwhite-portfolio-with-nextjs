@@ -1,9 +1,9 @@
 import { FiExternalLink } from "react-icons/fi";
 import Container from "../ui/Container";
 import Flex from "../ui/Flex";
-import bug from '../../../public/bug.png'
-import collabrix from '../../../public/collabrix.png'
-import chat from '../../../public/chat.png'
+import bug from "../../../public/bug.png";
+import collabrix from "../../../public/collabrix.png";
+import chat from "../../../public/chat.png";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaLink } from "react-icons/fa";
@@ -33,7 +33,7 @@ const projects = [
     desc: "A chatting application with many features like send friend request, accept or reject friend request, make friends and also block your friends. You can create group, add friends to your group, remove member or send join request to other group. Notification feature also included. ",
     gitlink: "#",
     livelink: "#",
-    img:chat,
+    img: chat,
     tags: ["React", "Tailwind", "Firebase", "Redux"],
   },
 ];
@@ -47,29 +47,26 @@ export default function Projects() {
       <Container>
         <div className="flex flex-col gap-12 max-w-6xl mx-auto">
           {/* Project 1 */}
-          {
-            projects.map((project, idx)=>(
-          <Flex key={idx} className="gap-8 items-center flex-col md:flex-row">
-            <div className="w-full md:w-[380px] h-[240px] rounded-xl ">
-              <Image 
-  src={project.img}
-  className="w-full h-full object-cover rounded-xl object-center" 
-  alt={project.title} 
-/>
-
-            </div>
-            <div className="flex-1">
-              <div className="text-[32px] font-black mb-2">{idx+1}</div>
-              <h3 className="text-[22px] font-bold mb-2">
-                {project.title}
-              </h3>
-              <p className="text-[#bdbdbd] mb-4">{project.desc}</p>
+          {projects.map((project, idx) => (
+            <Flex key={idx} className="gap-8 items-center flex-col md:flex-row">
+              <div className="w-full overflow-hidden cursor-pointer md:w-[380px] h-[240px] rounded-xl ">
+                <Image
+                  src={project.img}
+                  className="w-full h-full object-cover rounded-xl object-center 
+               transform transition duration-300 hover:scale-105"
+                  alt={project.title}
+                />
+              </div>
+              <div className="flex-1">
+                <div className="text-[32px] font-black mb-2">{idx + 1}</div>
+                <h3 className="text-[22px] font-bold mb-2">{project.title}</h3>
+                <p className="text-[#bdbdbd]  mb-4">{project.desc}</p>
                 <Flex className="gap-x-4 justify-start">
                   <Link href={project.livelink}>
-                  <FaLink size={20} />
+                    <FaLink size={20} />
                   </Link>
                   <Link className="mr-5" href={project.gitlink}>
-                  <FaGithub size={20} />
+                    <FaGithub size={20} />
                   </Link>
                   {project.tags.map((tag) => (
                     <span className="px-2 py-1 rounded-2xl border text-[12px] hover:bg-white hover:text-black cursor-pointer border-white">
@@ -77,10 +74,9 @@ export default function Projects() {
                     </span>
                   ))}
                 </Flex>
-            </div>
-          </Flex>
-            ))
-          }
+              </div>
+            </Flex>
+          ))}
           {/* Project 2 */}
           {/* <Flex className="gap-8 items-center flex-col md:flex-row-reverse">
             <div className="w-full md:w-[380px] h-[240px] rounded-xl bg-gray-300" />
