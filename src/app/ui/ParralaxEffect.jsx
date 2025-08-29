@@ -29,7 +29,6 @@ const ParralaxEffect = () => {
     };
 
     const animate = () => {
-        // simple lerp for smooth movement
         pos.current.x += (target.current.x - pos.current.x) * 0.1;
         pos.current.y += (target.current.y - pos.current.y) * 0.1;
 
