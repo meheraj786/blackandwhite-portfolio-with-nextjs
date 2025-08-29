@@ -15,9 +15,6 @@ export default function SocialIcons() {
       <div className={`${boxClass} bg-white text-black hover:text-white hover:bg-black cursor-pointer`}>
         <FaTwitter className={iconClass} />
       </div>
-      <div className={`${boxClass} bg-white text-black hover:text-white hover:bg-black cursor-pointer`}>
-        <FaDiscord className={iconClass} />
-      </div>
     </div>
   );
 }
