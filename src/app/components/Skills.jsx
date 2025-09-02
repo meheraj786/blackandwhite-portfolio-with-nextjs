@@ -10,14 +10,14 @@ const skills = [
   { icon: <SiMongodb size={40} />, label: "MongoDB" },
   { icon: <SiRedux size={40} />, label: "Redux" },
   { icon: <SiNextdotjs size={40} />, label: "Next.js" },
-  { icon: <SiTypescript size={40} />, label: "TypeScript" },
+  // { icon: <SiTypescript size={40} />, label: "TypeScript" },
   { icon: <FaGitAlt size={40} />, label: "Git" },
-  { icon: <FaDatabase size={40} />, label: "SQL/Database" },
+  // { icon: <FaDatabase size={40} />, label: "SQL/Database" },
   { icon: <SiHtml5 size={40} />, label: "HTML5" },
   { icon: <SiCss3 size={40} />, label: "CSS3" },
   { icon: <SiTailwindcss size={40} />, label: "TailwindCSS" },
   { icon: <FaFigma size={40} />, label: "Figma" },
-  { icon: <SiSocketdotio size={40} />, label: "Socket.io" },
+  // { icon: <SiSocketdotio size={40} />, label: "Socket.io" },
 ];
 
 export default function Skills() {

@@ -14,8 +14,8 @@ const projects = [
     id: 1,
     title: "BUG-Social App",
     desc: "A full-stack social networking platform built with React, Tailwind CSS, and Firebase. Features include user authentication, profile management, posts (text, image, events, jobs, products), likes, comments, messaging, notifications, pages, and groups. Designed with protected routes, responsive UI, and real-time interactions.",
-    gitlink: "#",
-    livelink: "#",
+    gitlink: "https://github.com/meheraj786/bug-social-platform",
+    livelink: "https://bug-social.vercel.app/",
     img: bug,
     tags: ["React", "Tailwind", "Firebase", "Redux", "Motion"],
   },
@@ -23,8 +23,8 @@ const projects = [
     id: 2,
     title: "Collabrix- A project management Application",
     desc: "A collaborative project management platform built with React, Redux, Tailwind, and Firebase. It includes secure authentication, task & subtask tracking, project dashboards with charts, real-time chat with team members, and role-based group management. Designed with a responsive UI and Kanban-style productivity flow.",
-    gitlink: "#",
-    livelink: "#",
+    gitlink: "https://github.com/meheraj786/project-management-system",
+    livelink: "https://collabrix360.vercel.app/",
     img: collabrix,
     tags: ["React", "Tailwind", "Firebase", "Redux", "Chart js"],
   },
@@ -32,8 +32,8 @@ const projects = [
     id: 3,
     title: "Top Chat- a chatting application",
     desc: "A chatting application with many features like send friend request, accept or reject friend request, make friends and also block your friends. You can create group, add friends to your group, remove member or send join request to other group. Notification feature also included. ",
-    gitlink: "#",
-    livelink: "#",
+    gitlink: "https://github.com/meheraj786/chatting-app",
+    livelink: "https://chatting-app-lime-pi.vercel.app/",
     img: chat,
     tags: ["React", "Tailwind", "Firebase", "Redux"],
   },
@@ -41,8 +41,8 @@ const projects = [
     id: 4,
     title: "Cookpal - Cooking recipe website",
     desc: "Cooking recipe website built with React, Redux Toolkit Query,and TailwindCSS. It fetches recipes from TheMealDB API, lets users browse by category. The site features organized pages and a modern navigation bar for easy use. ",
-    gitlink: "#",
-    livelink: "#",
+    gitlink: "https://github.com/meheraj786/cooking-website-with-RTKQ",
+    livelink: "https://cookpal-inky.vercel.app/",
     img: cookpal,
     tags: ["React", "Tailwind", "RTK Query", "Rest API"],
   },
@@ -140,11 +140,11 @@ export default function Projects() {
             </div>
           </Flex> */}
         </div>
-        <div className="flex justify-center mt-10">
+        {/* <div className="flex justify-center mt-10">
           <button className="px-6 py-2 bg-white text-black rounded-md font-medium hover:bg-gray-200 transition">
             View More
           </button>
-        </div>
+        </div> */}
       </Container>
     </section>
   );

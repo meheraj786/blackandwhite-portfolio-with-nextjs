@@ -9,7 +9,7 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="py-4 fixed top-0 z-[9999] w-full bg-white px-8 text-primary font-primary my-6">
+    <div className="py-4 fixed top-0 z-[9999] w-full bg-white px-8 text-primary font-primary">
       <Container>
         <Flex className="flex-col xl:flex-row">
           <Logo />

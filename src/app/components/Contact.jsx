@@ -42,11 +42,11 @@ export default function Contact() {
     <section id="contact" className="py-16 relative z-[999]">
       <Toaster position="bottom-right"/>
       <Container>
-        <Flex className="gap-x-12 flex-col md:flex-row justify-center items-start">
+        <Flex className="gap-x-12 flex-col-reverse text-center xl:text-left md:flex-row justify-center items-start">
           {/* Left: Contact Form */}
           <form
             onSubmit={handleSubmit}
-            className="flex-1 flex flex-col gap-4 w-1/2"
+            className="xl:flex-1 px-3 xl:px-0 flex flex-col gap-4 w-full xl:w-1/2"
           >
             <input
               type="text"
@@ -107,10 +107,10 @@ export default function Contact() {
           </form>
 
           {/* Right: Info */}
-          <div className="flex-1 flex flex-col text-left items-start justify-center w-1/2">
-            <h2 className="text-[32px] font-normal mb-2">
+          <div className="flex-1 flex flex-col xl:text-left text-center items-center xl:items-start justify-center xl:w-1/2">
+            <h2 className="text-[32px] text-center xl:text-left font-normal mb-2">
               Let’s{" "}
-              <span className="font-black border-2 border-black px-1">
+              <span className="font-black text-center xl:text-left border-2 border-black px-1">
                 talk
               </span>{" "}
               for

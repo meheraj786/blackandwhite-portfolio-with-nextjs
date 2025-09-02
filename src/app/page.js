@@ -16,8 +16,8 @@ export default function Home() {
     <EducationExperience/>
     <About/>
     <Projects/>
-    {/* <Testimonial/> */}
-    <Contact/>
+     {/* <Testimonial/> */}
+     <Contact/>
     </>
   );
 }
