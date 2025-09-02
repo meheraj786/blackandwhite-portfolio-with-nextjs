@@ -2,6 +2,7 @@ import { FiExternalLink } from "react-icons/fi";
 import Container from "../ui/Container";
 import Flex from "../ui/Flex";
 import bug from "../../../public/bug.png";
+import cookpal from "../../../public/cookpal.png";
 import collabrix from "../../../public/collabrix.png";
 import chat from "../../../public/chat.png";
 import Image from "next/image";
@@ -35,6 +36,15 @@ const projects = [
     livelink: "#",
     img: chat,
     tags: ["React", "Tailwind", "Firebase", "Redux"],
+  },
+  {
+    id: 4,
+    title: "Cookpal - Cooking recipe website",
+    desc: "Cooking recipe website built with React, Redux Toolkit Query,and TailwindCSS. It fetches recipes from TheMealDB API, lets users browse by category. The site features organized pages and a modern navigation bar for easy use. ",
+    gitlink: "#",
+    livelink: "#",
+    img: cookpal,
+    tags: ["React", "Tailwind", "RTK Query", "Rest API"],
   },
 ];
 

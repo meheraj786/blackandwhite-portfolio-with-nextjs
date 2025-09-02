@@ -6,9 +6,9 @@ import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 
 const sora = Sora({
-  subsets: ['latin'],
-  weight: ['400', '500', '600', '700', '800'], 
-  display: 'swap',
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
 });
 
 export const metadata = {
@@ -33,3 +33,14 @@ export default function RootLayout({ children }) {
       lenis.destroy();
     };
   }, []);
+
+  return (
+    <html lang="en" className={sora.className}>
+      <body>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
+}

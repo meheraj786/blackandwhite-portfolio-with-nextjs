@@ -5,7 +5,7 @@ import { Typewriter } from 'react-simple-typewriter'
 
 const TypeWriterH1 = () => {
   return (
-    <h1 className='text-[48px]'>
+    <h1 className='xl:text-[48px] text-[28px]'>
   Hello I'm <span className='font-black'>Meheraj H. </span>
   <br />
   <span className='font-black'>

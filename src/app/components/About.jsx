@@ -7,9 +7,9 @@ export default function About() {
     <section id="about" className="py-16 relative">
       <ParralaxEffect />
       <Container>
-        <Flex className="items-center gap-12">
-          <div className="w-[400px] h-[400px] border-2 border-black rounded-xl flex items-center justify-center">
-            <div className="w-[400px] h-[400px] border-2 border-black rounded-xl flex items-center justify-center">
+        <Flex className="items-center xl:gap-12">
+          <div className="xl:w-[400px] h-[400px] border-2 border-black rounded-xl flex items-center justify-center">
+            <div className="xl:w-[400px] h-[400px] border-2 border-black rounded-xl flex items-center justify-center">
               <img
                 src="/myImg.jpg"
                 className="w-full h-full rounded-xl object-cover object-center"

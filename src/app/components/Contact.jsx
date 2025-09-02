@@ -86,19 +86,19 @@ export default function Contact() {
             <div className="flex items-center gap-2 mt-2">
               <Button type="submit">Get In Touch</Button>
               <Link
-                href="#"
+                href="https://www.facebook.com/mehrajh786/"
                 className="w-10 h-10 flex items-center justify-center border border-black rounded text-black hover:bg-black hover:text-white transition"
               >
                 <FaFacebookF />
               </Link>
               <Link
-                href="#"
+                href="https://github.com/meheraj786"
                 className="w-10 h-10 flex items-center justify-center border border-black rounded text-black hover:bg-black hover:text-white transition"
               >
                 <FaGithub />
               </Link>
               <Link
-                href="#"
+                href="https://x.com/MeherajHosen786"
                 className="w-10 h-10 flex items-center justify-center border border-black rounded text-black hover:bg-black hover:text-white transition"
               >
                 <FaTwitter />

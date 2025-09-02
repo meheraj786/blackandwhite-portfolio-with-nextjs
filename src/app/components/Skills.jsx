@@ -23,12 +23,12 @@ const skills = [
 export default function Skills() {
   return (
     <section id="skill" className="py-16 text-center">
-      <h2 className="text-[38px] text-center mb-10">
+      <h2 className="xl:text-[38px] text-[28px] text-center mb-10">
         My <span className="font-black">Skills</span>
       </h2>
       <Container>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 mx-auto mb-8">
+      <div className="grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4 lg:grid-cols-5 gap-6 mx-auto mb-8">
         {skills.map((skill, i) => (
           <div
             key={i}

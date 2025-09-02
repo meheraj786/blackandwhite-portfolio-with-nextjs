@@ -46,7 +46,7 @@ const Banner = () => {
       <ParralaxEffect />
       <Container>
         <Flex>
-          <div className="left relative z-[10] w-1/2">
+          <div className="left relative z-[10] xl:w-1/2 w-full">
             <TypeWriterH1 />
             <p className="mt-[32px] text-[#71717A] mb-[80px]">
               A Passionate MERN stack Dev and Tech Enthusiast from the Milky Way
@@ -57,7 +57,7 @@ const Banner = () => {
             </p>
             <SocialIcons />
           </div>
-          <div className="right flex justify-end w-1/2">
+          <div className="right flex justify-end xl:w-1/2 w-full">
             <BannerShape />
           </div>
         </Flex>

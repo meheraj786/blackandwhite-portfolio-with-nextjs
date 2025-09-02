@@ -47,7 +47,7 @@ const ParralaxEffect = () => {
             ref={parallaxRef}
             onMouseMove={handleMouseMove}
             onMouseLeave={handleMouseLeave}
-            className="absolute z-[0] top-0 left-0 w-full h-full"
+            className="absolute hidden xl:block z-[0] top-0 left-0 w-full h-full"
             style={{ willChange: "transform" }}
         >
             <Image src={html} className='absolute  top-[10%] left-[10%]' width={140} height={140} alt="bannerShape" />
