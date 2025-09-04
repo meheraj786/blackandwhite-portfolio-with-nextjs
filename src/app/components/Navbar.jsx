@@ -16,7 +16,7 @@ const Navbar = () => {
           <ul className="flex text-[20px] justify-center flex-wrap items-center gap-x-[32px] font-semibold">
             <NavItems />
           </ul>
-          <Button>
+          <Button className="!px-7 !py-3">
             <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
               Resume
             </a>
