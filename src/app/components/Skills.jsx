@@ -1,21 +1,27 @@
-import { FaNodeJs, FaReact, FaDatabase, FaGitAlt, FaFigma } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiJavascript, SiRedux, SiNextdotjs, SiTypescript, SiHtml5, SiCss3, SiTailwindcss, SiStorybook, SiSocketdotio } from "react-icons/si";
+import { FaNodeJs, FaReact, FaDatabase, FaGitAlt, FaFigma, FaDocker } from "react-icons/fa";
+import { SiMongodb, SiExpress, SiJavascript, SiRedux, SiNextdotjs, SiTypescript, SiHtml5, SiCss3, SiTailwindcss, SiStorybook, SiSocketdotio, SiMysql, SiPrisma, SiJest, SiPostman, SiBeekeeperstudio, SiAstro } from "react-icons/si";
 import Container from "../ui/Container";
 
 const skills = [
-  { icon: <SiJavascript size={40} />, label: "JavaScript" },
-  { icon: <FaReact size={40} />, label: "React.js" },
-  { icon: <FaNodeJs size={40} />, label: "Node.js" },
-  { icon: <SiExpress size={40} />, label: "Express.js" },
-  { icon: <SiMongodb size={40} />, label: "MongoDB" },
-  { icon: <SiRedux size={40} />, label: "Redux" },
-  { icon: <SiNextdotjs size={40} />, label: "Next.js" },
-  // { icon: <SiTypescript size={40} />, label: "TypeScript" },
-  { icon: <FaGitAlt size={40} />, label: "Git" },
-  // { icon: <FaDatabase size={40} />, label: "SQL/Database" },
   { icon: <SiHtml5 size={40} />, label: "HTML5" },
   { icon: <SiCss3 size={40} />, label: "CSS3" },
+  { icon: <SiJavascript size={40} />, label: "JavaScript" },
+  { icon: <SiTypescript size={40} />, label: "TypeScript" },
+  { icon: <SiMongodb size={40} />, label: "MongoDB" },
+  { icon: <SiExpress size={40} />, label: "Express.js" },
+  { icon: <FaReact size={40} />, label: "React.js" },
+  { icon: <FaNodeJs size={40} />, label: "Node.js" },
+  { icon: <SiNextdotjs size={40} />, label: "Next.js" },
+  { icon: <SiMysql size={40} />, label: "MySQL" },
+  { icon: <SiBeekeeperstudio size={40} />, label: "Beekeeper Studio" },
+  { icon: <SiPrisma size={40} />, label: "Prisma" },
+  { icon: <SiAstro size={40} />, label: "Astro" },
+  { icon: <SiJest size={40} />, label: "Jest" },
+  { icon: <SiPostman size={40} />, label: "Postman" },
   { icon: <SiTailwindcss size={40} />, label: "TailwindCSS" },
+  { icon: <SiRedux size={40} />, label: "Redux" },
+  { icon: <FaGitAlt size={40} />, label: "Git" },
+  { icon: <FaDocker size={40} />, label: "Docker" },
   { icon: <FaFigma size={40} />, label: "Figma" },
   // { icon: <SiSocketdotio size={40} />, label: "Socket.io" },
 ];
