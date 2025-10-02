@@ -1,12 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
 import Button from "../ui/Button";
 import Container from "../ui/Container";
 import Flex from "../ui/Flex";
 import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
 import { toast, Toaster } from "react-hot-toast";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -20,31 +21,56 @@ export default function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+
+  //   if (!formData.name || !formData.email || !formData.message) {
+  //     toast.error("Please fill in all required fields!");
+  //     return;
+  //   }
+
+  //   toast.success("Message sent successfully!");
+
+  //   setFormData({
+  //     name: "",
+  //     email: "",
+  //     website: "",
+  //     message: "",
+  //   });
+  // };
+  const form = useRef();
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.message) {
-      toast.error("Please fill in all required fields!");
-      return;
-    }
-
-    toast.success("Message sent successfully!");
-
-    setFormData({
-      name: "",
-      email: "",
-      website: "",
-      message: "",
-    });
+    emailjs
+      .sendForm("service_uw8pal3", "template_r7ldq0n", form.current, {
+        publicKey: "TFKsrYym6xqMKgLp2",
+      })
+      .then(
+        () => {
+          toast.success("Message sent successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            website: "",
+            message: "",
+          });
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          toast.error("FAILED...!");
+        }
+      );
   };
 
   return (
     <section id="contact" className="py-16 relative z-[999]">
-      <Toaster position="bottom-right"/>
+      <Toaster position="bottom-right" />
       <Container>
         <Flex className="gap-x-12 flex-col-reverse text-center xl:text-left md:flex-row justify-center items-start">
-          {/* Left: Contact Form */}
           <form
+            ref={form}
             onSubmit={handleSubmit}
             className="xl:flex-1 px-3 xl:px-0 flex flex-col gap-4 w-full xl:w-1/2"
           >
@@ -106,7 +132,6 @@ export default function Contact() {
             </div>
           </form>
 
-          {/* Right: Info */}
           <div className="flex-1 flex flex-col xl:text-left text-center items-center xl:items-start justify-center xl:w-1/2">
             <h2 className="text-[32px] text-center xl:text-left font-normal mb-2">
               Let’s{" "}
