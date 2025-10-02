@@ -13,6 +13,7 @@ const BannerShape = () => {
       height={500}
       alt="bannerShape"
     />
+    
           <Image
       src={BannerVector}
       className='absolute animate-pulse top-0 left-0'
